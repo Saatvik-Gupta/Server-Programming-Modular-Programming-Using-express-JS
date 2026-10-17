@@ -2,7 +2,7 @@ import fs, { read } from "fs";
 
 export function readAllTodos()
 {
-    const data = fs.readFileSync("src/db/todos.db.json","utf8");
+    const data = fs.readFileSync("src/db/todos.json","utf8");
     const dataObj = JSON.parse(data);
     const allTodos = dataObj.todos;
 
@@ -11,7 +11,7 @@ export function readAllTodos()
 
 export function writeInTodos(obj)
 {
-    fs.writeFileSync("src/db/todos.db.json", JSON.stringify(obj));
+    fs.writeFileSync("src/db/todos.json", JSON.stringify(obj));
 }
 
 export function addInTodo(todoObj)

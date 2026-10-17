@@ -1,4 +1,4 @@
-import { readAllTodos, readSingleTodo, addInTodo } from "../repository/todos.repository.js";
+import { readAllTodos, readSingleTodo, addInTodo } from "../repository/todos.repo.js";
 
 export function getAllTodos(req,res)
 {
